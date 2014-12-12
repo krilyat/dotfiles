@@ -1,0 +1,7 @@
+startup_message off
+vbell off
+
+shelltitle "Shell"
+# Look and feel
+caption always "%{= 2m}%{+b w}Screen: %n | %h %=%t %D %d/%m/%y %c:%s"
+hardstatus alwayslastline "%-Lw%{= BW}%51>%n%f* %t%{-}%+Lw%<  %=% [%{=b)%{Y}%l%{g}]"
