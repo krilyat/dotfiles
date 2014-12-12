@@ -1,0 +1,10 @@
+bind 'T' title
+hardstatus on
+#hardstatus string "%{.bW}%-w%{.rW}%f%n %t%{-}%+w %=%{..G}[%H %l] %{..Y} %m/%d %c"
+hardstatus alwayslastline "%{=b}%{G} Tabz:%{b}%w %=%{kG}%C%A %D,%Y/%m/%d"
+shelltitle "-_-"
+startup_message off
+nonblock on
+vbell off
+defscrollback 10000
+bind 'Q' quit
