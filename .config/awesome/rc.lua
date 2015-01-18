@@ -230,7 +230,13 @@ globalkeys = awful.util.table.join(
             if client.focus then client.focus:raise() end
         end),
     awful.key({ modkey,           }, "w", function () mymainmenu:show() end),
-
+    -- Backlight manipulation
+    awful.key({}, "#233",  function () awful.util.spawn("light -A 10", false) end),
+    awful.key({}, "#232",  function () awful.util.spawn("light -U 10", false) end),
+    -- Volume manipulation
+    awful.key({}, "#123",  function () awful.util.spawn("alsa-tray --notify +5", false) end),
+    awful.key({}, "#122",  function () awful.util.spawn("alsa-tray --notify -5", false) end),
+    awful.key({}, "#121",  function () awful.util.spawn("alsa-tray --notify mute", false) end),
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end),
     awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end),
