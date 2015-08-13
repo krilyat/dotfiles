@@ -7,4 +7,6 @@
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
-PS1='[\u@\h \W]\$ '
+alias nas='ssh nas@192.168.0.101'
+export EDITOR=vim
+PS1='\[\e[1;32m\][\[\e[1;30m\]\u\[\e[1;31m\]@\[\e[1;30m\]\h \W\[\e[1;32m\]]\$\[\e[0m\] '
